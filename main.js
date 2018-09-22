@@ -17,13 +17,12 @@ const getSecret = () => {
 const getWords = () => {
     document.getElementById('decodeBtn').addEventListener('click', () => {
         let inputString = decodeInput.value;
-        let outputArray = inputString.split(',');
+        let outputArray = inputString.split(",");
         let finalOutput = '';
-        for (let i = 0; i < outputArray.length; i++) {
-            finalOutput += String.fromCharCode(outputArray[i])
-            return finalOutput;
-        }
-        printToDom(finalOuput, 'decodeOutput');
+        outputArray.forEach((value) => {
+            finalOuput.push(outputArray.fromCharCode(value))
+        })
+        printToDom(finalOutput, 'decodeOutput');
     })
 }
 
