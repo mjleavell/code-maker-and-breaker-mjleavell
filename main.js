@@ -19,9 +19,9 @@ const getWords = () => {
         let inputString = decodeInput.value;
         let outputArray = inputString.split(",");
         let finalOutput = '';
-        outputArray.forEach((value) => {
-            finalOuput.push(outputArray.fromCharCode(value))
-        })
+        for (let i = 0; i < outputArray.length; i++) {
+            finalOutput += String.fromCharCode(outputArray[i])
+        }
         printToDom(finalOutput, 'decodeOutput');
     })
 }
