@@ -1,4 +1,22 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: lightgrey;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.encodeResult, .decodeResult {
+    margin: 25px;
+}
+
+input[type='text'] {
+    width: 25%;
+    padding: 3px;
+}
+
+button {
+    padding: 3px;
 }

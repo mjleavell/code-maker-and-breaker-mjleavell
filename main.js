@@ -3,7 +3,7 @@ const printToDom = (stringToPrint, elementId) => {
     selectedDiv.innerHTML = stringToPrint;
 };
 
-const getSecret = () => {
+const convertToSecret = () => {
     document.getElementById('encodeBtn').addEventListener('click', (e) => {
         let inputString = encodeInput.value.split("");
         let outputArray = [];
@@ -14,7 +14,7 @@ const getSecret = () => {
     })
 }
 
-const getWords = () => {
+const convertToWords = () => {
     document.getElementById('decodeBtn').addEventListener('click', () => {
         let inputString = decodeInput.value;
         let outputArray = inputString.split(",");
@@ -26,5 +26,5 @@ const getWords = () => {
     })
 }
 
-getSecret();
-getWords();
+convertToSecret();
+convertToWords();
